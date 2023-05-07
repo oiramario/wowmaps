@@ -1,0 +1,156 @@
+div.topnav {
+	background-color: #222;
+	background-image: url(img/topnav_bg.gif);
+	background-repeat: repeat-x;
+	height: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+div.bottomap {
+	flex-grow: 1;
+	width: 100%;
+	background-color: #222;
+}
+
+div.topnav img {
+	border: 0;
+	float: left;
+}
+
+div.source {
+	float: right;
+	padding: 9px 5px;
+	color: white;
+	display: block;
+}
+div.source a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+/* =========================================================== */
+
+#nav {
+	float: left;
+        padding: 0;
+        margin: 0 0 0 20px;
+	line-height: 100%;
+}
+#nav li {
+	margin: 0 10px;
+	padding: 0 0 0 0;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+#nav li.tophassub {
+	padding-right: 14px;
+	background-image: url(img/subnav_btn.gif);
+	background-position: center right;
+	background-repeat: no-repeat;
+	height: 35px;
+}
+
+#nav li.subhassub {
+	background-image: url(img/subnav_btn2.gif);
+	background-position: 170px center;
+	background-repeat: no-repeat;
+}
+
+/* top level */
+#nav a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 9px 0 0 0;
+	margin: 0;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	height: 35px;
+}
+#nav a.current {
+	color: #A4D627 !important;
+}
+#nav li:hover > a {
+	color: #CAE77D;
+}
+#nav a.pending,
+#nav li:hover > a.pending {
+	color: #666 !important;
+}
+
+
+
+/* sub levels */
+#nav ul li:hover a, #nav li:hover li a {
+	background: none;
+	border: none;
+	color: #fff;
+}
+#nav ul a:hover {
+	color: #CAE77D !important;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+/* level 2 list */
+#nav ul {
+	z-order: 100;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	position: absolute;
+	top: 34px;
+	left: 0;
+	background: #333;
+	border: 1px solid #111;
+}
+
+/* dropdown */
+#nav li:hover > ul {
+	display: block;
+}
+#nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #444;
+}
+#nav ul a {
+	margin: 0;
+	padding: 6px 20px 6px 20px;
+	font-weight: normal;
+	background: #333;
+	height: auto;
+}
+#nav ul a:hover {
+	background: #222;
+}
+
+/* level 3+ list */
+#nav ul ul {
+	z-order: 300;
+	left: 185px;
+	top: 5px;
+}
+
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#nav {
+	display: inline-block;
+}
+html[xmlns] #nav {
+	display: block;
+}
+* html #nav {
+	height: 1%;
+}
+

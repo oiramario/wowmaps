@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>World of MapCraft</title>
+<link rel="stylesheet" type="text/css" media="all" href="../style.css" />
+
+<style>
+body { 
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarItems = document.querySelectorAll('#subnav li');
+  const mapFrame = document.getElementById('mapframe');
+
+  navbarItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      const src = this.getAttribute('data-src');
+      mapFrame.src = src;
+    });
+  });
+});
+</script>
+
+</head>
+<body>
+
+<div class="topnav">
+
+<img src="../img/mapcraft.gif" width="70" height="35" />
+
+<ul id="nav" xclass="topnav">
+	<li><a href="#">东部王国</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Azeroth/EasternPlaguelands.html"><a href="#">东瘟疫之地</a></li>
+			<li data-src="Azeroth/IsleofQuelDanas.html"><a href="#">奎尔丹纳斯岛</a></li>
+			<li data-src="Azeroth/AlteracMountains.html"><a href="#">奥特兰克山脉</a></li>
+			<li data-src="Azeroth/HillsbradFoothills.html"><a href="#">希尔斯布莱德丘陵</a></li>
+			<li data-src="Azeroth/Undercity.html"><a href="#">幽暗城</a></li>
+			<li data-src="Azeroth/Ghostlands.html"><a href="#">幽魂之地</a></li>
+			<li data-src="Azeroth/SwampofSorrows.html"><a href="#">悲伤沼泽</a></li>
+			<li data-src="Azeroth/TirisfalGlades.html"><a href="#">提瑞斯法林地</a></li>
+			<li data-src="Azeroth/Duskwood.html"><a href="#">暮色森林</a></li>
+			<li data-src="Azeroth/StormwindCity.html"><a href="#">暴风城</a></li>
+			<li data-src="Azeroth/EversongWoods.html"><a href="#">永歌森林</a></li>
+			<li data-src="Azeroth/LochModan.html"><a href="#">洛克莫丹</a></li>
+			<li data-src="Azeroth/Wetlands.html"><a href="#">湿地</a></li>
+			<li data-src="Azeroth/SearingGorge.html"><a href="#">灼热峡谷</a></li>
+			<li data-src="Azeroth/BurningSteppes.html"><a href="#">燃烧平原</a></li>
+			<li data-src="Azeroth/ElwynnForest.html"><a href="#">艾尔文森林</a></li>
+			<li data-src="Azeroth/StranglethornJungle.html"><a href="#">荆棘谷</a></li>
+			<li data-src="Azeroth/Badlands.html"><a href="#">荒芜之地</a></li>
+			<li data-src="Azeroth/WesternPlaguelands.html"><a href="#">西瘟疫之地</a></li>
+			<li data-src="Azeroth/Westfall.html"><a href="#">西部荒野</a></li>
+			<li data-src="Azeroth/BlastedLands.html"><a href="#">诅咒之地</a></li>
+			<li data-src="Azeroth/RedridgeMountains.html"><a href="#">赤脊山</a></li>
+			<li data-src="Azeroth/TheHinterlands.html"><a href="#">辛特兰</a></li>
+			<li data-src="Azeroth/DeadwindPass.html"><a href="#">逆风小径</a></li>
+			<li data-src="Azeroth/Ironforge.html"><a href="#">铁炉堡</a></li>
+			<li data-src="Azeroth/SilvermoonCity.html"><a href="#">银月城</a></li>
+			<li data-src="Azeroth/SilverpineForest.html"><a href="#">银松森林</a></li>
+			<li data-src="Azeroth/ArathiHighlands.html"><a href="#">阿拉希高地</a></li>
+		</ul>
+	</li>
+	<li><a href="#" onclick="return false;">卡利姆多</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Kalimdor/Winterspring.html"><a href="#">冬泉谷</a></li>
+			<li data-src="Kalimdor/Desolace.html"><a href="#">凄凉之地</a></li>
+			<li data-src="Kalimdor/ThousandNeedles.html"><a href="#">千针石林</a></li>
+			<li data-src="Kalimdor/TheExodar.html"><a href="#">埃索达</a></li>
+			<li data-src="Kalimdor/Tanaris.html"><a href="#">塔纳利斯</a></li>
+			<li data-src="Kalimdor/Orgrimmar.html"><a href="#">奥格瑞玛</a></li>
+			<li data-src="Kalimdor/Un&apos;GoroCrater.html"><a href="#">安戈洛环形山</a></li>
+			<li data-src="Kalimdor/DustwallowMarsh.html"><a href="#">尘泥沼泽</a></li>
+			<li data-src="Kalimdor/Silithus.html"><a href="#">希利苏斯</a></li>
+			<li data-src="Kalimdor/Moonglade.html"><a href="#">月光林地</a></li>
+			<li data-src="Kalimdor/Durotar.html"><a href="#">杜隆塔尔</a></li>
+			<li data-src="Kalimdor/Teldrassil.html"><a href="#">泰达希尔</a></li>
+			<li data-src="Kalimdor/Ashenvale.html"><a href="#">灰谷</a></li>
+			<li data-src="Kalimdor/StonetalonMountains.html"><a href="#">石爪山脉</a></li>
+			<li data-src="Kalimdor/AzuremystIsle.html"><a href="#">秘蓝岛</a></li>
+			<li data-src="Kalimdor/BloodmystIsle.html"><a href="#">秘血岛</a></li>
+			<li data-src="Kalimdor/Azshara.html"><a href="#">艾萨拉</a></li>
+			<li data-src="Kalimdor/Mulgore.html"><a href="#">莫高雷</a></li>
+			<li data-src="Kalimdor/Feralas.html"><a href="#">菲拉斯</a></li>
+			<li data-src="Kalimdor/TheBarrens.html"><a href="#">贫瘠之地</a></li>
+			<li data-src="Kalimdor/Felwood.html"><a href="#">费伍德森林</a></li>
+			<li data-src="Kalimdor/Darnassus.html"><a href="#">达纳苏斯</a></li>
+			<li data-src="Kalimdor/ThunderBluff.html"><a href="#">雷霆崖</a></li>
+			<li data-src="Kalimdor/Darkshore.html"><a href="#">黑海岸</a></li>
+		</ul>
+	</li>
+	<li><a href="#" onclick="return false;">外域</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Expansion01/BladesEdgeMountains.html"><a href="#">刀锋山</a></li>
+			<li data-src="Expansion01/Hellfire.html"><a href="#">地狱火半岛</a></li>
+			<li data-src="Expansion01/ShadowmoonValley.html"><a href="#">影月谷</a></li>
+			<li data-src="Expansion01/ShattrathCity.html"><a href="#">沙塔斯城</a></li>
+			<li data-src="Expansion01/TerokkarForest.html"><a href="#">泰罗卡森林</a></li>
+			<li data-src="Expansion01/Nagrand.html"><a href="#">纳格兰</a></li>
+			<li data-src="Expansion01/Netherstorm.html"><a href="#">虚空风暴</a></li>
+			<li data-src="Expansion01/Zangarmarsh.html"><a href="#">赞加沼泽</a></li>
+		</ul>
+	</li>
+	<li><a href="#" onclick="return false;">诺森德</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Northrend/Wintergrasp.html"><a href="#">冬拥湖</a></li>
+			<li data-src="Northrend/Icecrown.html"><a href="#">冰冠冰川</a></li>
+			<li data-src="Northrend/BoreanTundra.html"><a href="#">北风苔原</a></li>
+			<li data-src="Northrend/HowlingFjord.html"><a href="#">嚎风峡湾</a></li>
+			<li data-src="Northrend/CrystalsongForest.html"><a href="#">晶歌森林</a></li>
+			<li data-src="Northrend/HrothgarsLanding.html"><a href="#">洛斯加尔登陆点</a></li>
+			<li data-src="Northrend/GrizzlyHills.html"><a href="#">灰熊丘陵</a></li>
+			<li data-src="Northrend/ZulDrak.html"><a href="#">祖达克</a></li>
+			<li data-src="Northrend/SholazarBasin.html"><a href="#">索拉查盆地</a></li>
+			<li data-src="Northrend/Dalaran.html"><a href="#">达拉然</a></li>
+			<li data-src="Northrend/TheStormPeaks.html"><a href="#">风暴峭壁</a></li>
+			<li data-src="Northrend/Dragonblight.html"><a href="#">龙骨荒野</a></li>
+		</ul>
+	</li>
+</ul>
+
+</div>
+
+<div id="map" class="bottomap">
+<iframe id="mapframe" src="Azeroth/EasternPlaguelands.html" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>

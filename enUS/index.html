@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>World of MapCraft</title>
+<link rel="stylesheet" type="text/css" media="all" href="../style.css" />
+
+<style>
+body { 
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarItems = document.querySelectorAll('#subnav li');
+  const mapFrame = document.getElementById('mapframe');
+
+  navbarItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      const src = this.getAttribute('data-src');
+      mapFrame.src = src;
+    });
+  });
+});
+</script>
+
+</head>
+<body>
+
+<div class="topnav">
+
+<img src="../img/mapcraft.gif" width="70" height="35" />
+
+<ul id="nav" xclass="topnav">
+	<li><a href="#">Azeroth</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Azeroth/EasternPlaguelands.html"><a href="#">EasternPlaguelands</a></li>
+			<li data-src="Azeroth/IsleofQuelDanas.html"><a href="#">IsleofQuelDanas</a></li>
+			<li data-src="Azeroth/AlteracMountains.html"><a href="#">AlteracMountains</a></li>
+			<li data-src="Azeroth/HillsbradFoothills.html"><a href="#">HillsbradFoothills</a></li>
+			<li data-src="Azeroth/Undercity.html"><a href="#">Undercity</a></li>
+			<li data-src="Azeroth/Ghostlands.html"><a href="#">Ghostlands</a></li>
+			<li data-src="Azeroth/SwampofSorrows.html"><a href="#">SwampofSorrows</a></li>
+			<li data-src="Azeroth/TirisfalGlades.html"><a href="#">TirisfalGlades</a></li>
+			<li data-src="Azeroth/Duskwood.html"><a href="#">Duskwood</a></li>
+			<li data-src="Azeroth/StormwindCity.html"><a href="#">StormwindCity</a></li>
+			<li data-src="Azeroth/EversongWoods.html"><a href="#">EversongWoods</a></li>
+			<li data-src="Azeroth/LochModan.html"><a href="#">LochModan</a></li>
+			<li data-src="Azeroth/Wetlands.html"><a href="#">Wetlands</a></li>
+			<li data-src="Azeroth/SearingGorge.html"><a href="#">SearingGorge</a></li>
+			<li data-src="Azeroth/BurningSteppes.html"><a href="#">BurningSteppes</a></li>
+			<li data-src="Azeroth/ElwynnForest.html"><a href="#">ElwynnForest</a></li>
+			<li data-src="Azeroth/StranglethornJungle.html"><a href="#">StranglethornJungle</a></li>
+			<li data-src="Azeroth/Badlands.html"><a href="#">Badlands</a></li>
+			<li data-src="Azeroth/WesternPlaguelands.html"><a href="#">WesternPlaguelands</a></li>
+			<li data-src="Azeroth/Westfall.html"><a href="#">Westfall</a></li>
+			<li data-src="Azeroth/BlastedLands.html"><a href="#">BlastedLands</a></li>
+			<li data-src="Azeroth/RedridgeMountains.html"><a href="#">RedridgeMountains</a></li>
+			<li data-src="Azeroth/TheHinterlands.html"><a href="#">TheHinterlands</a></li>
+			<li data-src="Azeroth/DeadwindPass.html"><a href="#">DeadwindPass</a></li>
+			<li data-src="Azeroth/Ironforge.html"><a href="#">Ironforge</a></li>
+			<li data-src="Azeroth/SilvermoonCity.html"><a href="#">SilvermoonCity</a></li>
+			<li data-src="Azeroth/SilverpineForest.html"><a href="#">SilverpineForest</a></li>
+			<li data-src="Azeroth/ArathiHighlands.html"><a href="#">ArathiHighlands</a></li>
+		</ul>
+	</li>
+	<li><a href="#" onclick="return false;">Kalimdor</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Kalimdor/Winterspring.html"><a href="#">Winterspring</a></li>
+			<li data-src="Kalimdor/Desolace.html"><a href="#">Desolace</a></li>
+			<li data-src="Kalimdor/ThousandNeedles.html"><a href="#">ThousandNeedles</a></li>
+			<li data-src="Kalimdor/TheExodar.html"><a href="#">TheExodar</a></li>
+			<li data-src="Kalimdor/Tanaris.html"><a href="#">Tanaris</a></li>
+			<li data-src="Kalimdor/Orgrimmar.html"><a href="#">Orgrimmar</a></li>
+			<li data-src="Kalimdor/Un&apos;GoroCrater.html"><a href="#">Un&apos;GoroCrater</a></li>
+			<li data-src="Kalimdor/DustwallowMarsh.html"><a href="#">DustwallowMarsh</a></li>
+			<li data-src="Kalimdor/Silithus.html"><a href="#">Silithus</a></li>
+			<li data-src="Kalimdor/Moonglade.html"><a href="#">Moonglade</a></li>
+			<li data-src="Kalimdor/Durotar.html"><a href="#">Durotar</a></li>
+			<li data-src="Kalimdor/Teldrassil.html"><a href="#">Teldrassil</a></li>
+			<li data-src="Kalimdor/Ashenvale.html"><a href="#">Ashenvale</a></li>
+			<li data-src="Kalimdor/StonetalonMountains.html"><a href="#">StonetalonMountains</a></li>
+			<li data-src="Kalimdor/AzuremystIsle.html"><a href="#">AzuremystIsle</a></li>
+			<li data-src="Kalimdor/BloodmystIsle.html"><a href="#">BloodmystIsle</a></li>
+			<li data-src="Kalimdor/Azshara.html"><a href="#">Azshara</a></li>
+			<li data-src="Kalimdor/Mulgore.html"><a href="#">Mulgore</a></li>
+			<li data-src="Kalimdor/Feralas.html"><a href="#">Feralas</a></li>
+			<li data-src="Kalimdor/TheBarrens.html"><a href="#">TheBarrens</a></li>
+			<li data-src="Kalimdor/Felwood.html"><a href="#">Felwood</a></li>
+			<li data-src="Kalimdor/Darnassus.html"><a href="#">Darnassus</a></li>
+			<li data-src="Kalimdor/ThunderBluff.html"><a href="#">ThunderBluff</a></li>
+			<li data-src="Kalimdor/Darkshore.html"><a href="#">Darkshore</a></li>
+		</ul>
+	</li>
+	<li><a href="#" onclick="return false;">Expansion01</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Expansion01/BladesEdgeMountains.html"><a href="#">BladesEdgeMountains</a></li>
+			<li data-src="Expansion01/Hellfire.html"><a href="#">Hellfire</a></li>
+			<li data-src="Expansion01/ShadowmoonValley.html"><a href="#">ShadowmoonValley</a></li>
+			<li data-src="Expansion01/ShattrathCity.html"><a href="#">ShattrathCity</a></li>
+			<li data-src="Expansion01/TerokkarForest.html"><a href="#">TerokkarForest</a></li>
+			<li data-src="Expansion01/Nagrand.html"><a href="#">Nagrand</a></li>
+			<li data-src="Expansion01/Netherstorm.html"><a href="#">Netherstorm</a></li>
+			<li data-src="Expansion01/Zangarmarsh.html"><a href="#">Zangarmarsh</a></li>
+		</ul>
+	</li>
+	<li><a href="#" onclick="return false;">Northrend</a>
+		<ul id="subnav" class="subnav">
+			<li data-src="Northrend/Wintergrasp.html"><a href="#">Wintergrasp</a></li>
+			<li data-src="Northrend/Icecrown.html"><a href="#">Icecrown</a></li>
+			<li data-src="Northrend/BoreanTundra.html"><a href="#">BoreanTundra</a></li>
+			<li data-src="Northrend/HowlingFjord.html"><a href="#">HowlingFjord</a></li>
+			<li data-src="Northrend/CrystalsongForest.html"><a href="#">CrystalsongForest</a></li>
+			<li data-src="Northrend/HrothgarsLanding.html"><a href="#">HrothgarsLanding</a></li>
+			<li data-src="Northrend/GrizzlyHills.html"><a href="#">GrizzlyHills</a></li>
+			<li data-src="Northrend/ZulDrak.html"><a href="#">ZulDrak</a></li>
+			<li data-src="Northrend/SholazarBasin.html"><a href="#">SholazarBasin</a></li>
+			<li data-src="Northrend/Dalaran.html"><a href="#">Dalaran</a></li>
+			<li data-src="Northrend/TheStormPeaks.html"><a href="#">TheStormPeaks</a></li>
+			<li data-src="Northrend/Dragonblight.html"><a href="#">Dragonblight</a></li>
+		</ul>
+	</li>
+</ul>
+
+</div>
+
+<div id="map" class="bottomap">
+<iframe id="mapframe" src="Azeroth/EasternPlaguelands.html" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
